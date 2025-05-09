@@ -79,4 +79,4 @@ Menu de Generacion de Credenciales:
 5. Salir
 ```
 ## 📊 Diagrama de Clases (UML)
-![Diagrama de Clases UML](uml/diagrama_clases.png)
+![Diagrama de Clases UML](Diagrama_Credenciales.png)
