@@ -1,4 +1,4 @@
-# 🪪  Generador-de-Credenciales
+# 🪪  Generador de Credenciales
 
 ### Estudiante:
 - Jose Cornejo - Patrones de Diseño (Seccion 2)
