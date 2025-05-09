@@ -57,7 +57,7 @@ public class CredencialEvento {
     }
 ```
 ## 🔒 Patrón Singleton – Aplicación
-- el patron `Singleton` en la Clase "ConfiguracionEvento" contiene:
+- el patron `Singleton` en la Clase "ConfiguracionEvento" contiene un getInstancia() para generar/acceder a los datos del evento (los cuales no se pueden modificar sino hasta que se sale del sistema, debido a que el ser singleton no le permite sobreescribirse [o mi cerebro esta demasiado frito como para averiguarlo] ):
 ```java
     public static ConfiguracionEvento getInstancia(String nombreEvento, int duracion, String idioma){
         if(instancia==null){
@@ -66,3 +66,17 @@ public class CredencialEvento {
         return instancia;
     }
 ```
+## 🖥️ Menú por consola
+
+```
+-------------------------
+Menu de Generacion de Credenciales:
+
+1. Configurar Evento
+2. Ver Configuracion del Evento
+3. Agregar Credencial
+4. Ver todas las Credenciales
+5. Salir
+```
+## 📊 Diagrama de Clases (UML)
+![Diagrama de Clases UML](uml/diagrama_clases.png)
