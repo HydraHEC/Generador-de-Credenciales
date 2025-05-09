@@ -25,9 +25,44 @@ en caso de **NO** tener instalado GitBash:
   - En mi repositorio https://github.com/HydraHEC/Generador-de-Credenciales.git esta el archivo "GeneradorDeCredenciales.jar" disponible para su descarga
 
 2. Compilar y ejecutar:
-   - si tienes **GitBash** ejecutas desde la propia CLI del programa
+   
 ```bash
+java -jar GeneradorDeCredenciales.jar
+```
+- si tienes **GitBash** ejecutas desde la propia CLI del programa, en caso de que NO, debes acceder a tu CMD y ejecutar el comando **CD** con la ruta donde tiene el archivo, y en esa direccion ejecutar el comando anterior:
+```bash
+cd ruta_del_archivo\
 java -jar GeneradorDeCredenciales.jar
 ```
 
 ---
+## 🧬 Patrón Prototype – Aplicacion
+- el patron `Prototype` implementa `Cloneable` en la clase "CredencialEvento" de la siguiente forma:
+  - la clase implementa la interfaz **Cloneable** y sobreescribe el metodo **clone()** de la clase Object donde, en lugar de usar **super.clone()**, crea manualmente una nueva instancia de CredencialEvento con los mismos atributos, para asi tener un mayor control sobre el proceso de clonacion y evitar una clonacion superficial
+```java
+public class CredencialEvento {
+    private String nombre;
+    private String cargo;
+    private String rut;
+
+    public CredencialEvento(String nombre, String cargo, String rut){
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.rut = rut;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException{
+      return new CredencialEvento(this.nombre, this.cargo, this.rut);
+    }
+```
+## 🔒 Patrón Singleton – Aplicación
+- el patron `Singleton` en la Clase "ConfiguracionEvento" contiene:
+```java
+    public static ConfiguracionEvento getInstancia(String nombreEvento, int duracion, String idioma){
+        if(instancia==null){
+            instancia = new ConfiguracionEvento(nombreEvento, duracion, idioma);
+        }
+        return instancia;
+    }
+```
