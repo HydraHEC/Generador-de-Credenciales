@@ -9,7 +9,7 @@ El objetivo del sistema es el permitir generar Credenciales Personlizadas para u
 
 ---
 ## 🚀 Cómo ejecutar
-
+antes que nada, el sistema fue programado con JDK22, en caso de que de fallos, asi que use esta version de JDK en adelantw para que funcione correctamente
 en caso de tener instalado con GitBash:
 
 1. Clonar el repositorio:
