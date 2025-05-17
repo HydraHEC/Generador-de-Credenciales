@@ -83,9 +83,9 @@ Menu de Generacion de Credenciales:
 ---
 
 ## 📸 Captura del sistema funcionando
-![img1](Imagenes_Generador/img1.svg)
-![img2](Imagenes_Generador/img_2.svg)
-![img3](Imagenes_Generador/img3.svg)
-![img4](Imagenes_Generador/img4.svg)
-![img5](Imagenes_Generador/img5.svg)
-![img6](Imagenes_Generador/img6.svg)
+![img1](Imagenes_Generador/img1.png)
+![img2](Imagenes_Generador/img2.png)
+![img3](Imagenes_Generador/img3.png)
+![img4](Imagenes_Generador/img4.png)
+![img5](Imagenes_Generador/img5.png)
+![img6](Imagenes_Generador/img6.png)
